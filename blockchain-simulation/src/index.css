@@ -1,0 +1,148 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(0, 0, 0, 0.87);
+  background-color: #10486b;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  /* Use flexbox for vertical layout but with correct alignment */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* horizontally center */
+  justify-content: flex-start; /* start from top */
+  min-width: 320px;
+  min-height: 100vh;
+  padding: 20px; /* add padding so content is not stuck to edges */
+  box-sizing: border-box;
+  background-color: #87bbec; /* ensure bg color */
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  margin-bottom: 1rem;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #b73e7f;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  margin-top: 10px;
+}
+button:hover {
+  border-color: #008d52;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: #607a91;
+    background-color: #50e0c8;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #85c140
+  }
+}
+.mining-container {
+  background-color: #10486b;
+  border: 2px solid #333;
+  padding: 20px;
+  border-radius: 16px;
+  margin-top: 30px;
+  width: 100%;
+  max-width: 870px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  color: #000000;
+}
+
+.mining-container h2 {
+  font-size: 1.8rem;
+  margin-bottom: 16px;
+  color: #ffffff;
+}
+
+.mining-result {
+  background-color: #565656;
+  padding: 16px;
+  border-radius: 10px;
+  margin-top: 20px;
+  border-left: 12px solid #9fa3a2;
+  font-size: 0.95rem;
+}
+
+.mining-result p {
+  margin: 6px 0;
+}
+
+.mining-note {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  color: #fffbfb;
+}
+.consensus-container {
+  background-color: #10486b;
+  border: 2px solid #333;
+  padding: 20px;
+  border-radius: 16px;
+  margin-top: 30px;
+  width: 100%;
+  max-width: 870px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  color: #000000;
+}
+
+.consensus-container h2 {
+  font-size: 1.8rem;
+  margin-bottom: 16px;
+  color: #ffffff;
+}
+
+.consensus-result {
+  background-color: #351e61;
+  padding: 16px;
+  border-radius: 10px;
+  margin-top: 20px;
+  border-left: 12px solid #8184c7;
+  font-size: 0.95rem;
+}
+
+.consensus-result p {
+  margin: 6px 0;
+}
+
+.consensus-note {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  color: #ffffff;
+}
